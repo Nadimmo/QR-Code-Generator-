@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QR Code Generator</title>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <h1 class="text-2xl text-center font-bold" > QR Code Generator</h1>
+  
+  <div class="mt-6 flex justify-center">
+    <input type="url" id="url" class="p-3 border border-sky-300">
+    <button onclick="handlerQRCode()" class="bg-green-400 p-3 ">Generat</button>
+  </div>
+  
+
+  <div id="QR-Code" class="mt-6 flex justify-center">
+    
+  </div>
+  
+  
+  <script src="qr.js"> </script>
+</body>
